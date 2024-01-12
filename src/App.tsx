@@ -7,7 +7,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={avator} alt="Avator" className="my-avator" />
-        <h1>TakakiMoriguchi</h1>
+
+        <section className='Head'>
+          <h1>TakakiMoriguchi</h1>
+          <p>🇯🇵&nbsp;🇺🇸&nbsp;🇪🇸</p>
+        </section>
 
         <section className="Career">
           <div className="body">
