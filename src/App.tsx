@@ -35,6 +35,17 @@ function App() {
 
       <main className="App-body">
 
+        <section className="Skill">
+          <h4>Interests</h4>
+          <ul>
+            <li>・Clean Architecture</li>
+            <li>・Functional Programming</li>
+            <li>・Atomic Design</li>
+            <li>・GitFlow</li>
+            <li>・Raw Code</li>
+          </ul>
+        </section>
+
         <section className="Keireki">
           <div className="head">
             <span className="year">2021.11-</span>
@@ -121,7 +132,7 @@ function App() {
             <h3>スマホ修理店開業・フリーランス再開</h3>
 
             <div className="item">
-              <p>スマホ修理屋店 HPはMicroCMSとNuxt.jsのJAMStack構成で作成</p>
+              <p>スマホ修理屋店経営 - HPはMicroCMSとNuxt.jsのJAMStack構成で作成</p>
             </div>
           </div>
         </section>

@@ -78,6 +78,19 @@
   background-color: #eeeeee;
   width: 80%;
 
+  .Skill {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 5rem;
+
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
   .Keireki {
     width: 80%;
     margin: 0 auto;
