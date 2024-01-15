@@ -17,9 +17,8 @@ function App() {
           <div className="body">
             <h3>💻 IT Engneer: 6th year</h3>
             <div className="skill">
-              <p>MAIN: TypeScript(React), Python, SQL</p>
-              <p>SUB: PHP, Ruby</p>
-              <p>Now Studing: Go, Scala, Rust</p>
+              <p>TypeScript(React), Python, SQL</p>
+              <p>PHP, Ruby, Scala, Rust</p>
             </div>
           </div>
 
@@ -43,6 +42,11 @@ function App() {
             <li>・Atomic Design</li>
             <li>・GitFlow</li>
             <li>・Raw Code</li>
+          </ul>
+          <h4>Poor Skills</h4>
+          <ul>
+            <li>・OS Skill</li>
+            <li>・Security</li>
           </ul>
         </section>
 
@@ -136,7 +140,6 @@ function App() {
             </div>
           </div>
         </section>
-
 
         <section className="Keireki">
           <div className="head">
