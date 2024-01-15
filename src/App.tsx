@@ -17,7 +17,7 @@ function App() {
           <div className="body">
             <h3>💻 IT Engneer: 6th year</h3>
             <div className="skill">
-              <p>TypeScript(React), Python, SQL</p>
+              <p>TypeScript(React), Python, SQL, Docker</p>
               <p>PHP, Ruby, Scala, Rust</p>
             </div>
           </div>
@@ -44,14 +44,15 @@ function App() {
           </ul>
           <h4>Poor Skills</h4>
           <ul>
-            <li>・OS Skill</li>
             <li>・Security</li>
+            <li>・Infrastructure</li>
+            <li>・DevOps</li>
           </ul>
         </section>
 
         <section className="Keireki">
           <div className="head">
-            <span className="year">2021.11-</span>
+            <span className="year">2021.11-2023.1</span>
           </div>
 
           <div className="body">
@@ -73,6 +74,10 @@ function App() {
               <h4>ライブラリ等</h4>
               <p>django rest framework, pycryptodome, cryptography, reportlab</p>
               <p>react-hook-form, react-select, react-hot-toast, chart-js, bootstrap, i18next, scss</p>
+            </div>
+            <div className="item">
+              <h4>環境</h4>
+              <p>On-premiss, AlmaLinux, nginx, git-lab</p>
             </div>
           </div>
         </section>
@@ -100,6 +105,10 @@ function App() {
               <h4>ライブラリ等</h4>
               <p>prisma, scss, pdfmake, excellJS, MUI, react-hook-form, react-hot-toast</p>
             </div>
+            <div className="item">
+              <h4>環境</h4>
+              <p>On-premiss, AlmaLinux, nginx, git-hub</p>
+            </div>
           </div>
         </section>
 
@@ -122,6 +131,10 @@ function App() {
             <div className="item">
               <h4>要件</h4>
               <p>観光系キュレーションサイト新規開発</p>
+            </div>
+            <div className="item">
+              <h4>環境</h4>
+              <p>AWS, AlmaLinux, nginx, git-hub</p>
             </div>
           </div>
         </section>
