@@ -41,6 +41,8 @@ function App() {
             <li>・Functional Programming</li>
             <li>・Atomic Design</li>
             <li>・GitFlow</li>
+            <li>・DDD</li>
+            <li>・SDD</li>
           </ul>
           <h4>Poor Skills</h4>
           <ul>
