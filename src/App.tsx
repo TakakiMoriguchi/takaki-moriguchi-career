@@ -54,7 +54,30 @@ function App() {
 
         <section className="Keireki">
           <div className="head">
-            <span className="year">2021.11-2023.1</span>
+            <span className="year">2024.2-</span>
+          </div>
+
+          <div className="body">
+            <h3>金融系システム構築</h3>
+            <div className="item">
+              <h4>役割</h4>
+              <p>フロントエンド（開発4名）</p>
+            </div>
+            <div className="item">
+              <h4>使用言語</h4>
+              <p>PHP(laravel) </p>
+              <p>TypeScript(react/Next.js)</p>
+            </div>
+            <div className="item">
+              <h4>要件</h4>
+              <p>プラント系管理システムの保守開発</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="Keireki">
+          <div className="head">
+            <span className="year">2021.11-2024.1</span>
           </div>
 
           <div className="body">
@@ -65,7 +88,7 @@ function App() {
             </div>
             <div className="item">
               <h4>使用言語</h4>
-              <p>Python(django) 開発</p>
+              <p>Python(django) </p>
               <p>TypeScript(react/Next.js)</p>
             </div>
             <div className="item">
