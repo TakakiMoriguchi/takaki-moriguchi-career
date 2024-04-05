@@ -17,8 +17,8 @@ function App() {
           <div className="body">
             <h3>💻 IT Engneer: 6th year</h3>
             <div className="skill">
-              <p>TypeScript(React), Python, SQL, Docker</p>
-              <p>PHP, Ruby, Scala, Rust</p>
+              <p>TypeScript(React), Python, Rust</p>
+              <p>SQL, Docker</p>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ function App() {
 
         <section className="Keireki">
           <div className="head">
-            <span className="year">2019-</span>
+            <span className="year">2019-2024</span>
           </div>
 
           <div className="body">
