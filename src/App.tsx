@@ -10,7 +10,7 @@ function App() {
 
         <section className='Head'>
           <h1>TakakiMoriguchi</h1>
-          <p>🇯🇵&nbsp;🇺🇸&nbsp;🇪🇸</p>
+          <p>🇯🇵&nbsp;🇺🇸&nbsp;🇨🇳&nbsp;🇪🇸</p>
         </section>
 
         <section className="Career">
@@ -41,8 +41,7 @@ function App() {
             <li>・Functional Programming</li>
             <li>・Atomic Design</li>
             <li>・GitFlow</li>
-            <li>・DDD</li>
-            <li>・SDD</li>
+            <li>・DDD/SDD/TDD</li>
           </ul>
           <h4>Poor Skills</h4>
           <ul>
@@ -54,23 +53,62 @@ function App() {
 
         <section className="Keireki">
           <div className="head">
-            <span className="year">2024.2-</span>
+            <span className="year">2024.6-</span>
           </div>
 
           <div className="body">
-            <h3>金融系システム構築</h3>
+            <h3>医療系ビューア保守開発</h3>
             <div className="item">
               <h4>役割</h4>
-              <p>フロントエンド（開発4名）</p>
+              <p>フロントエンド開発（開発4名）</p>
             </div>
             <div className="item">
               <h4>使用言語</h4>
-              <p>PHP(laravel) </p>
+              <p>TypeScript(React)</p>
+            </div>
+            <div className="item">
+              <h4>要件</h4>
+              <p>医療系電子カルテ共有システムのビューア追加開発</p>
+            </div>
+            <div className="item">
+              <h4>ライブラリ等</h4>
+              <p>MUI, formik, yup, swr</p>
+            </div>
+            <div className="item">
+              <h4>環境</h4>
+              <p>firebase, REST</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="Keireki">
+          <div className="head">
+            <span className="year">2024.2-6</span>
+          </div>
+
+          <div className="body">
+            <h3>プラント保全管理システム構築</h3>
+            <div className="item">
+              <h4>役割</h4>
+              <p>デザイン・フロントエンド開発（開発4名）</p>
+            </div>
+            <div className="item">
+              <h4>使用言語</h4>
+              <p>PHP(laravel)</p>
               <p>TypeScript(react/Next.js)</p>
             </div>
             <div className="item">
               <h4>要件</h4>
-              <p>プラント系管理システムの保守開発</p>
+              <p>プラント系保全管理システムの保守開発</p>
+              <p>Figmaデザイン</p>
+            </div>
+            <div className="item">
+              <h4>ライブラリ等</h4>
+              <p>react-hook-form, swr, MUI</p>
+            </div>
+            <div className="item">
+              <h4>環境</h4>
+              <p>EC2</p>
             </div>
           </div>
         </section>
