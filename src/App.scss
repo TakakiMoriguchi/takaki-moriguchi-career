@@ -69,7 +69,6 @@
       }
     }
   }
-
 }
 
 .App-body {
@@ -77,75 +76,6 @@
   padding: 5rem 0;
   background-color: #eeeeee;
   width: 80%;
-
-  .Skill {
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-    margin-bottom: 5rem;
-
-    ul, li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-  }
-
-  .Keireki {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    display: flex;
-
-    .head{
-      text-align: left;
-      font-size: .875rem;
-      font-weight: bold;
-      width: 20%;
-      padding-top: .25rem;
-
-      .year{
-        border-left: 5px solid #282c34;
-        padding-left: .25rem;
-      }
-    }
-
-    .body{
-      width: 100%;
-
-      h3{
-        margin: 0;
-        padding: 0;
-        font-size: 1.25rem;
-        text-align: left;
-        margin-bottom: 1rem;
-      }
-
-      .item{
-        text-align: left;
-        margin-bottom: 1.5rem;
-
-        h4{
-          margin: 0;
-          padding: 0;
-          font-size: 1rem;
-        }
-
-        p{
-          margin: .25rem 0;
-          padding: 0;
-          font-size: .875rem;
-        }
-      }
-
-      ul, li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-align: left;
-      }
-    }
-  }
 }
 
 .App-link {
@@ -158,5 +88,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.simpleTable {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #aaa;
+    padding: .5rem;
+    text-align: center;
   }
 }

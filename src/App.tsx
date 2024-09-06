@@ -1,8 +1,10 @@
-import React from 'react';
 import './App.scss';
 import avator from './assets/images/my_avator.png';
+import data from './assets/data.json';
+import { Timeline, Text, Accordion, Box, Title, Stack, Grid, Divider, List, Space, Paper } from '@mantine/core';
 
 function App() {
+  console.log(data)
   return (
     <div className="App">
       <header className="App-header">
@@ -34,222 +36,129 @@ function App() {
 
       <main className="App-body">
 
-        <section className="Skill">
-          <h4>Interests</h4>
-          <ul>
-            <li>・Clean Architecture</li>
-            <li>・Functional Programming</li>
-            <li>・Atomic Design</li>
-            <li>・GitFlow</li>
-            <li>・DDD/SDD/TDD</li>
-          </ul>
-          <h4>Poor Skills</h4>
-          <ul>
-            <li>・Security</li>
-            <li>・Infrastructure</li>
-            <li>・DevOps</li>
-          </ul>
-        </section>
+        <Grid>
+          <Grid.Col span={6}>
+            <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
+              <Title order={5}>👍&nbsp;Interests</Title>
+              <List listStyleType="none">
+                <List.Item>クリーンアーキテクチャ</List.Item>
+                <List.Item>関数型プログラミング</List.Item>
+                <List.Item>アトミックデザイン（コンポーネント設計）</List.Item>
+                <List.Item>パフォーマンスチューニング</List.Item>
+                <List.Item>GitFlow</List.Item>
+                <List.Item>DDD/SDD/TDD</List.Item>
+                <List.Item>行動心理学</List.Item>
+              </List>
+            </Paper>
+          </Grid.Col>
+          <Grid.Col span={6}>
+            <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
+              <Title order={5}>👎&nbsp;Disinterest</Title>
+              <List listStyleType="none">
+                <List.Item><s>Security</s></List.Item>
+                <List.Item>Infrastructure</List.Item>
+                <List.Item>DevOps</List.Item>
+              </List>
+            </Paper>
+          </Grid.Col>
+        </Grid>
 
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2024.6-</span>
-          </div>
+        <Space h="xl" />
 
-          <div className="body">
-            <h3>医療系ビューア保守開発</h3>
-            <div className="item">
-              <h4>役割</h4>
-              <p>フロントエンド開発（開発4名）</p>
-            </div>
-            <div className="item">
-              <h4>使用言語</h4>
-              <p>TypeScript(React)</p>
-            </div>
-            <div className="item">
-              <h4>要件</h4>
-              <p>医療系電子カルテ共有システムのビューア追加開発</p>
-            </div>
-            <div className="item">
-              <h4>ライブラリ等</h4>
-              <p>MUI, formik, yup, swr</p>
-            </div>
-            <div className="item">
-              <h4>環境</h4>
-              <p>firebase, REST</p>
-            </div>
-          </div>
-        </section>
+        <Timeline active={2} bulletSize={24} lineWidth={2}>
+          {data.slice().reverse().map((item, index) => {
+            const titleArea = (
+              <Box py={3}>
+                <Text size="xs">{item.start_date} ~ {item.end_date}</Text>
+                <Text fw={700}>【{item.business_category}】{item.project_title}</Text>
+                <Divider my="md" color="#099cff" />
+              </Box>
+            )
+            return (
+              <Timeline.Item title={titleArea}>
+                <Grid>
+                  <Grid.Col span={6}>
+                    <Stack gap="md">
+                      <Box>
+                        <Title order={6}>概要</Title>
+                        <Text dangerouslySetInnerHTML={{ __html: item.project_detail.overview.replaceAll("¥n", "<br />") }} />
+                        <Text>契約形態：{item.employment_status}</Text>
+                        <Text>役割：{item.role}（{item.member_count}/人）</Text>
+                      </Box>
 
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2024.2-6</span>
-          </div>
+                      <Box>
+                        <Title order={6}>言語</Title>
+                        <Text>{item.programming_language.join(", ")}</Text>
+                      </Box>
 
-          <div className="body">
-            <h3>プラント保全管理システム構築</h3>
-            <div className="item">
-              <h4>役割</h4>
-              <p>デザイン・フロントエンド開発（開発4名）</p>
-            </div>
-            <div className="item">
-              <h4>使用言語</h4>
-              <p>PHP(laravel)</p>
-              <p>TypeScript(react/Next.js)</p>
-            </div>
-            <div className="item">
-              <h4>要件</h4>
-              <p>プラント系保全管理システムの保守開発</p>
-              <p>Figmaデザイン</p>
-            </div>
-            <div className="item">
-              <h4>ライブラリ等</h4>
-              <p>react-hook-form, swr, MUI</p>
-            </div>
-            <div className="item">
-              <h4>環境</h4>
-              <p>EC2</p>
-            </div>
-          </div>
-        </section>
+                      <Box>
+                        <Title order={6}>FW</Title>
+                        <Text>{item.framework.join(", ")}</Text>
+                      </Box>
+                    </Stack>
+                  </Grid.Col>
 
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2021.11-2024.1</span>
-          </div>
+                  <Grid.Col span={6}>
+                    <Stack>
+                        <Title order={6}>詳細</Title>
 
-          <div className="body">
-            <h3>金融系システム構築</h3>
-            <div className="item">
-              <h4>役割</h4>
-              <p>フルスタック・PL（開発5名）</p>
-            </div>
-            <div className="item">
-              <h4>使用言語</h4>
-              <p>Python(django) </p>
-              <p>TypeScript(react/Next.js)</p>
-            </div>
-            <div className="item">
-              <h4>要件</h4>
-              <p>金融系システム(php)のリプレイス</p>
-            </div>
-            <div className="item">
-              <h4>ライブラリ等</h4>
-              <p>django rest framework, pycryptodome, cryptography, reportlab</p>
-              <p>react-hook-form, react-select, react-hot-toast, chart-js, bootstrap, i18next, scss</p>
-            </div>
-            <div className="item">
-              <h4>環境</h4>
-              <p>On-premiss, AlmaLinux, nginx, git-lab</p>
-            </div>
-          </div>
-        </section>
+                        <Box>
+                          <Text size="xs">担当業務</Text>
+                          {item.project_detail.task_responsibilities}
+                        </Box>
 
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2023.5-</span>
-          </div>
+                        <Box>
+                          <Text size="xs">成果</Text>
+                          {item.project_detail.achievements}
+                        </Box>
 
-          <div className="body">
-            <h3>運送系システム構築</h3>
-            <div className="item">
-              <h4>役割</h4>
-              <p>フルスタック（開発2名）</p>
-            </div>
-            <div className="item">
-              <h4>使用言語</h4>
-              <p>TypeScript(Next.js)</p>
-            </div>
-            <div className="item">
-              <h4>要件</h4>
-              <p>既存運送管理システム(VB)のリプレイス引継ぎ。</p>
-            </div>
-            <div className="item">
-              <h4>ライブラリ等</h4>
-              <p>prisma, scss, pdfmake, excellJS, MUI, react-hook-form, react-hot-toast</p>
-            </div>
-            <div className="item">
-              <h4>環境</h4>
-              <p>On-premiss, AlmaLinux, nginx, git-hub</p>
-            </div>
-          </div>
-        </section>
+                        <Box>
+                          <Text size="xs">チーム構成</Text>
+                          {item.project_detail.team_structure}
+                        </Box>
 
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2019-2021</span>
-          </div>
+                        <Box>
+                          <Text size="xs">使用したツールや技術</Text>
+                          {item.project_detail.tools_technologies_used}
+                        </Box>
 
-          <div className="body">
-            <h3>遊びのコンシェルジュ(個人開発)</h3>
-            <div className="item">
-              <h4>役割</h4>
-              <p>フルスタック（開発4名）</p>
-            </div>
-            <div className="item">
-              <h4>使用言語</h4>
-              <p>PHP(Laravel)</p>
-              <p>JavaScript(Vue.js)</p>
-            </div>
-            <div className="item">
-              <h4>要件</h4>
-              <p>観光系キュレーションサイト新規開発</p>
-            </div>
-            <div className="item">
-              <h4>環境</h4>
-              <p>AWS, AlmaLinux, nginx, git-hub</p>
-            </div>
-          </div>
-        </section>
+                        <Box>
+                          <Text size="xs">gitリポジトリ</Text>
+                          {item.project_detail.git_repository}
+                        </Box>
 
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2019-2024</span>
-          </div>
+                        <table className="simpleTable">
+                          <thead>
+                            <tr>
+                              <th>調査分析</th>
+                              <th>要件定義</th>
+                              <th>基本設計</th>
+                              <th>詳細設計</th>
+                              <th>実装・単体</th>
+                              <th>テスト</th>
+                              <th>保守・運用</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>{item.pe_investigation_analysis ? "◯" : "-"}</td>
+                              <td>{item.pe_requirement_definition ? "◯" : "-"}</td>
+                              <td>{item.pe_basic_design ? "◯" : "-"}</td>
+                              <td>{item.pe_detailed_design ? "◯" : "-"}</td>
+                              <td>{item.pe_implementation_unit_testing ? "◯" : "-"}</td>
+                              <td>{item.pe_testing ? "◯" : "-"}</td>
+                              <td>{item.pe_maintenance_operation ? "◯" : "-"}</td>
+                            </tr>
+                          </tbody>
+                        </table>
 
-          <div className="body">
-            <h3>スマホ修理店開業・フリーランス再開</h3>
-
-            <div className="item">
-              <p>スマホ修理屋店経営 - HPはMicroCMSとNuxt.jsのJAMStack構成で作成</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2012-2019</span>
-          </div>
-
-          <div className="body">
-            <ul>
-              <li>寿司店勤務</li>
-              <li>
-                大手漫画喫茶グループ勤務（人事・広報・運営・販促）<br />
-                └ phpで面接受付〜採用管理システム構築<br />
-                └ ドローン空撮<br />
-                └ デザイン業務（POP・WEB・看板制作）<br />
-              </li>
-              <li>業界新聞社勤務（記者・WEB制作）</li>
-              <li></li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="Keireki">
-          <div className="head">
-            <span className="year">2010-2012</span>
-          </div>
-
-          <div className="body">
-            <h3>フリーランスとして活動</h3>
-            <ul>
-              <li>WEBサイト制作（wordpress・HMTL5/CSS）</li>
-              <li>グラフィックデザイン</li>
-              <li>イラストレーション</li>
-            </ul>
-          </div>
-        </section>
+                    </Stack>
+                  </Grid.Col>
+                </Grid>
+              </Timeline.Item>
+            )
+          })}
+        </Timeline>
 
       </main>
     </div>

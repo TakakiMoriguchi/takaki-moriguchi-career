@@ -1,0 +1,31 @@
+data用のテンプレート
+
+{
+  "id": ,
+  "business_category": ,
+  "project_title": ,
+  "project_detail": {
+    "overview": "",
+    "task_responsibilities": "",
+    "achievements": "",
+    "team_structure": "",
+    "tools_technologies_used": [""],
+    "git_repository": ""
+  },
+  "employment_status": ,
+  "start_date": ,
+  "end_date": ,
+  "role": ,
+  "member_count": ,
+  "programming_language": [""],
+  "framework": [""],
+  "db": ,
+  "server": ,
+  "pe_investigation_analysis": ,
+  "pe_requirement_definition": ,
+  "pe_basic_design": ,
+  "pe_detailed_design": ,
+  "pe_implementation_unit_testing": ,
+  "pe_testing": ,
+  "pe_maintenance_operation": ,
+}
