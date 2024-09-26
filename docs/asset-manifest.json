@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/takaki-moriguchi-career/static/css/main.83b2163c.css",
-    "main.js": "/takaki-moriguchi-career/static/js/main.8e2c00db.js",
+    "main.css": "/takaki-moriguchi-career/static/css/main.b7638d78.css",
+    "main.js": "/takaki-moriguchi-career/static/js/main.c98c9b7d.js",
     "static/js/787.0eb2f3ea.chunk.js": "/takaki-moriguchi-career/static/js/787.0eb2f3ea.chunk.js",
     "static/media/my_avator.png": "/takaki-moriguchi-career/static/media/my_avator.9ff7355a9d74e4b35399.png",
     "index.html": "/takaki-moriguchi-career/index.html",
-    "main.83b2163c.css.map": "/takaki-moriguchi-career/static/css/main.83b2163c.css.map",
-    "main.8e2c00db.js.map": "/takaki-moriguchi-career/static/js/main.8e2c00db.js.map",
+    "main.b7638d78.css.map": "/takaki-moriguchi-career/static/css/main.b7638d78.css.map",
+    "main.c98c9b7d.js.map": "/takaki-moriguchi-career/static/js/main.c98c9b7d.js.map",
     "787.0eb2f3ea.chunk.js.map": "/takaki-moriguchi-career/static/js/787.0eb2f3ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83b2163c.css",
-    "static/js/main.8e2c00db.js"
+    "static/css/main.b7638d78.css",
+    "static/js/main.c98c9b7d.js"
   ]
 }

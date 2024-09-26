@@ -1,7 +1,7 @@
 import './App.scss';
 import avator from './assets/images/my_avator.png';
 import data from './assets/data.json';
-import { Timeline, Text, Accordion, Box, Title, Stack, Grid, Divider, List, Space, Paper } from '@mantine/core';
+import { Timeline, Text, Box, Title, Stack, Grid, Divider, List, Space, Paper } from '@mantine/core';
 
 function App() {
   console.log(data)
