@@ -311,7 +311,7 @@
     "project_detail": {
       "overview": "SESを利用して参画¥nリリース前の修正・リリース後の追加開発¥nバグ修正・新機能開発¥nFigmaデザインに対してのデザイン調整¥n複雑な計算や条件式はFE側で処理する方針¥n強い型定義・DOM操作など¥n",
       "task_responsibilities": "開発",
-      "achievements": "契約終了",
+      "achievements": "10月末で契約終了",
       "team_structure": "自分+フロント2名+バックエンド1名+PM1名+PL1名",
       "tools_technologies_used": [
         "Figma",
@@ -322,7 +322,7 @@
     },
     "employment_status": "準委任契約",
     "start_date": "2024年6月",
-    "end_date": "現在進行中",
+    "end_date": "2024年10月",
     "role": "PG",
     "member_count": 6,
     "programming_language": [
