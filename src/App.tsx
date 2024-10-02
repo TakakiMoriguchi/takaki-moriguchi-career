@@ -13,6 +13,7 @@ function App() {
         <section className='Head'>
           <h1>TakakiMoriguchi</h1>
           <p>🇯🇵&nbsp;🇺🇸&nbsp;🇨🇳&nbsp;🇪🇸</p>
+          <p>Generalist | <s>Specialist</s></p>
         </section>
 
         <section className="Career">
