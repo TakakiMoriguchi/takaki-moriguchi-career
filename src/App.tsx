@@ -119,7 +119,7 @@ function App() {
 
                         <Box>
                           <Text size="xs">使用したツールや技術</Text>
-                          {item.project_detail.tools_technologies_used}
+                          {item.project_detail.tools_technologies_used.join(", ")}
                         </Box>
 
                         <Box>
