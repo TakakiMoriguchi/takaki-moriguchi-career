@@ -1,6 +1,6 @@
 import './App.scss';
 import avator from './assets/images/my_avator.png';
-import data from './assets/data.json';
+import { data } from './data';
 import { Timeline, Text, Box, Title, Stack, Grid, Divider, List, Space, Paper } from '@mantine/core';
 
 function App() {
@@ -47,7 +47,6 @@ function App() {
                 <List.Item>アトミックデザイン（コンポーネント設計）</List.Item>
                 <List.Item>パフォーマンスチューニング</List.Item>
                 <List.Item>GitFlow</List.Item>
-                <List.Item>DDD/SDD/TDD</List.Item>
                 <List.Item>行動心理学</List.Item>
               </List>
             </Paper>
@@ -135,7 +134,7 @@ function App() {
                               <th>要件定義</th>
                               <th>基本設計</th>
                               <th>詳細設計</th>
-                              <th>実装・単体</th>
+                              <th>実装</th>
                               <th>テスト</th>
                               <th>保守・運用</th>
                             </tr>
