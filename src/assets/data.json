@@ -31,13 +31,11 @@
     ],
     "db": "MySQL",
     "server": "centos7",
-    "pe_investigation_analysis": true,
     "pe_requirement_definition": true,
     "pe_basic_design": true,
     "pe_detailed_design": true,
     "pe_implementation_unit_testing": true,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 2,
@@ -71,13 +69,11 @@
     ],
     "db": "PostgreSQL",
     "server": "centos5",
-    "pe_investigation_analysis": true,
     "pe_requirement_definition": true,
     "pe_basic_design": true,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": true,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 3,
@@ -107,13 +103,11 @@
     ],
     "db": "",
     "server": "",
-    "pe_investigation_analysis": false,
     "pe_requirement_definition": false,
     "pe_basic_design": false,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": false,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 4,
@@ -144,13 +138,11 @@
     ],
     "db": "MySQL",
     "server": "AlmaLinux",
-    "pe_investigation_analysis": true,
     "pe_requirement_definition": false,
     "pe_basic_design": false,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": false,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 5,
@@ -185,13 +177,11 @@
     ],
     "db": "MySQL",
     "server": "AlmaLinux/Nginx",
-    "pe_investigation_analysis": true,
     "pe_requirement_definition": true,
     "pe_basic_design": true,
     "pe_detailed_design": true,
     "pe_implementation_unit_testing": true,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 6,
@@ -222,13 +212,11 @@
     ],
     "db": "MySQL",
     "server": "AlmaLinux/Nginx",
-    "pe_investigation_analysis": true,
     "pe_requirement_definition": true,
     "pe_basic_design": true,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": true,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 7,
@@ -259,13 +247,11 @@
     ],
     "db": "MySQL",
     "server": "nginx",
-    "pe_investigation_analysis": true,
     "pe_requirement_definition": true,
     "pe_basic_design": true,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": true,
-    "pe_testing": true,
-    "pe_maintenance_operation": false
+    "pe_testing": true
   },
   {
     "id": 8,
@@ -296,13 +282,11 @@
     ],
     "db": "MySQL",
     "server": "AWS",
-    "pe_investigation_analysis": false,
     "pe_requirement_definition": true,
     "pe_basic_design": false,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": true,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   },
   {
     "id": 9,
@@ -333,12 +317,10 @@
     ],
     "db": "Firebase",
     "server": "",
-    "pe_investigation_analysis": false,
     "pe_requirement_definition": false,
     "pe_basic_design": false,
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": true,
-    "pe_testing": false,
-    "pe_maintenance_operation": false
+    "pe_testing": false
   }
 ]
