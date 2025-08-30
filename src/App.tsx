@@ -32,7 +32,7 @@ function App() {
 
         <section className="Career">
           <div className="body">
-            <h3>💻&nbsp;&nbsp;IT Engneer: 7th year</h3>
+            <h3>💻&nbsp;&nbsp;IT Engineer: 8th year</h3>
             <div className="skill">
               <p>TypeScript(React), Python, Go</p>
               <p>SQL, Docker</p>
