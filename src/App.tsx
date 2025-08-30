@@ -1,7 +1,7 @@
 import './App.scss';
 import avator from './assets/images/my_avator.png';
 import { data } from './data';
-import { Timeline, Text, Box, Title, Stack, Grid, Divider, List, Space, Paper, Button } from '@mantine/core';
+import { Timeline, Text, Box, Title, Stack, Grid, Divider, Badge, Group, Space, Paper, Button } from '@mantine/core';
 import download from './assets/images/download.svg';
 import { downloadResume } from './downloadResume';
 
@@ -26,7 +26,7 @@ function App() {
 
         <section className='Head'>
           <h1>ENTJ ♂({age})</h1>
-          <p>🇯🇵&nbsp;🇺🇸&nbsp;🇨🇳&nbsp;🇪🇸</p>
+          <p>🇯🇵&nbsp;🇺🇸&nbsp;🇨🇳</p>
           <p>Generalist | <s>Specialist</s></p>
         </section>
 
@@ -51,21 +51,39 @@ function App() {
 
       <main className="App-body">
 
-        <Grid>
-          <Grid.Col span={12}>
-            <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
-              <Title order={5}>👍&nbsp;Interests</Title>
-              <List listStyleType="none">
-                <List.Item>クリーンアーキテクチャ</List.Item>
-                <List.Item>関数型プログラミング</List.Item>
-                <List.Item>アトミックデザイン（コンポーネント設計）</List.Item>
-                <List.Item>パフォーマンスチューニング</List.Item>
-                <List.Item>GitFlow</List.Item>
-                <List.Item>行動心理学</List.Item>
-              </List>
-            </Paper>
-          </Grid.Col>
-        </Grid>
+    <Grid>
+      <Grid.Col span={12}>
+        <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
+          <Title order={5}>👍&nbsp;Interests</Title>
+          <Group mt="md" gap="sm">
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              クリーンアーキテクチャ
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              関数型プログラミング
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              アトミックデザイン（コンポーネント設計）
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              パフォーマンスチューニング
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              GitFlow
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              行動心理学
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              単体テスト
+            </Badge>
+            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
+              ふりかえりMTG
+            </Badge>
+          </Group>
+        </Paper>
+      </Grid.Col>
+    </Grid>
 
         <Space h="xl" />
 

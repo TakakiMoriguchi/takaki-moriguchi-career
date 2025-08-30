@@ -290,7 +290,7 @@ export const data = [
         zabbixによる監視の導入
       `,
       "task_responsibilities": "開発",
-      "achievements": "現在進行中",
+      "achievements": "開発終了",
       "team_structure": "自分1名",
       "tools_technologies_used": [
         "mermaid"
@@ -299,7 +299,7 @@ export const data = [
     },
     "employment_status": "準委任契約",
     "start_date": "2023年1月末頃",
-    "end_date": "継続中（空いている時間で開発）",
+    "end_date": "2025年2月頃",
     "role": "PG",
     "member_count": 1,
     "programming_language": [
@@ -448,6 +448,89 @@ export const data = [
     "pe_detailed_design": false,
     "pe_implementation_unit_testing": true,
     "pe_testing": false,
+    "pe_maintenance_operation": false
+  },
+  {
+    "id": 11,
+    "business_category": "交通",
+    "project_title": "鉄道会社のWEBページ, 入力CMSページ作成",
+    "project_detail": {
+      "overview": `
+        鉄道会社向けのWEBページ作成案件。
+        要件定義段階では、打ち合わせ内容などを仕様書に記述。
+        実装段階では、主にフロントエンドを担当し、後半はバッチ開発に関わる。
+        ふりかえりミーティングを積極的に行い、チームの結束力に貢献した。
+        スケジュールやタスク管理も担当し、期限内に完了。
+      `,
+      "task_responsibilities": "開発",
+      "achievements": "開発中",
+      "team_structure": "全体で30-40名（フロントは8名）",
+      "tools_technologies_used": [
+        "Figma",
+        "Figjam"
+      ],
+      "git_repository": "github"
+    },
+    "employment_status": "SES",
+    "start_date": "2024年11月",
+    "end_date": "-",
+    "role": "PG",
+    "member_count": 8,
+    "programming_language": [
+      "TypeScript",
+      "Go"
+    ],
+    "framework": [
+      "React19",
+      "Next.js15"
+    ],
+    "db": "",
+    "server": "",
+    "pe_investigation_analysis": true,
+    "pe_requirement_definition": true,
+    "pe_basic_design": false,
+    "pe_detailed_design": false,
+    "pe_implementation_unit_testing": true,
+    "pe_testing": true,
+    "pe_maintenance_operation": false
+  },
+  {
+    "id": 12,
+    "business_category": "サービス",
+    "project_title": "ふりかえりツール開発",
+    "project_detail": {
+      "overview": `
+        ふりかえりミーティングのためのWEBアプリ開発。
+      `,
+      "task_responsibilities": "開発",
+      "achievements": "開発中",
+      "team_structure": "自分1名",
+      "tools_technologies_used": [
+        "Figjam"
+      ],
+      "git_repository": "github"
+    },
+    "employment_status": "準委任契約",
+    "start_date": "2025年2月",
+    "end_date": "-",
+    "role": "PG/PM",
+    "member_count": 1,
+    "programming_language": [
+      "TypeScript",
+      "Go"
+    ],
+    "framework": [
+      "React19",
+      "Next.js15"
+    ],
+    "db": "",
+    "server": "",
+    "pe_investigation_analysis": true,
+    "pe_requirement_definition": true,
+    "pe_basic_design": true,
+    "pe_detailed_design": true,
+    "pe_implementation_unit_testing": true,
+    "pe_testing": true,
     "pe_maintenance_operation": false
   }
 ]
