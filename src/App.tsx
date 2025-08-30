@@ -1,7 +1,20 @@
 import './App.scss';
 import avator from './assets/images/my_avator.png';
 import { data } from './data';
-import { Timeline, Text, Box, Title, Stack, Grid, Divider, Badge, Group, Space, Paper, Button } from '@mantine/core';
+import {
+  Timeline,
+  Text,
+  Box,
+  Title,
+  Stack,
+  Grid,
+  Divider,
+  Badge,
+  Group,
+  Space,
+  Paper,
+  Button,
+} from '@mantine/core';
 import download from './assets/images/download.svg';
 import { downloadResume } from './downloadResume';
 
@@ -11,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <section className='Download'>
+        <section className="Download">
           <Button
             leftSection={<img src={download} alt="Download" />}
             variant="outline"
@@ -19,15 +32,19 @@ function App() {
             radius="xl"
             size="md"
             onClick={downloadResume}
-          >Download Resume</Button>
+          >
+            Download Resume
+          </Button>
         </section>
 
         <img src={avator} alt="Avator" className="my-avator" />
 
-        <section className='Head'>
+        <section className="Head">
           <h1>ENTJ ♂({age})</h1>
           <p>🇯🇵&nbsp;🇺🇸&nbsp;🇨🇳</p>
-          <p>Generalist | <s>Specialist</s></p>
+          <p>
+            Generalist | <s>Specialist</s>
+          </p>
         </section>
 
         <section className="Career">
@@ -50,78 +67,90 @@ function App() {
       </header>
 
       <main className="App-body">
-
-    <Grid>
-      <Grid.Col span={12}>
-        <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
-          <Title order={5}>👍&nbsp;Interests</Title>
-          <Group mt="md" gap="sm">
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              クリーンアーキテクチャ
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              関数型プログラミング
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              アトミックデザイン（コンポーネント設計）
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              パフォーマンスチューニング
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              GitFlow
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              行動心理学
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              単体テスト
-            </Badge>
-            <Badge radius="xl" color="gray" variant="light" style={{ color: "black" }}>
-              ふりかえりMTG
-            </Badge>
-          </Group>
-        </Paper>
-      </Grid.Col>
-    </Grid>
+        <Grid>
+          <Grid.Col span={12}>
+            <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
+              <Title order={5}>👍&nbsp;Interests</Title>
+              <Group mt="md" gap="sm">
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  クリーンアーキテクチャ
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  関数型プログラミング
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  アトミックデザイン（コンポーネント設計）
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  パフォーマンスチューニング
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  GitFlow
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  行動心理学
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  単体テスト
+                </Badge>
+                <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
+                  ふりかえりMTG
+                </Badge>
+              </Group>
+            </Paper>
+          </Grid.Col>
+        </Grid>
 
         <Space h="xl" />
 
         <Timeline active={2} bulletSize={24} lineWidth={2}>
-          {data.slice().reverse().map((item, index) => {
-            const titleArea = (
-              <Box py={3}>
-                <Text size="xs">{item.start_date} ~ {item.end_date}</Text>
-                <Text fw={700}>【{item.business_category}】{item.project_title}</Text>
-                <Divider my="md" color="#099cff" />
-              </Box>
-            )
-            return (
-              <Timeline.Item title={titleArea} key={index}>
-                <Grid>
-                  <Grid.Col span={6}>
-                    <Stack gap="md">
-                      <Box>
-                        <Title order={6}>概要</Title>
-                        <Text dangerouslySetInnerHTML={{ __html: item.project_detail.overview.replaceAll("¥n", "<br />") }} />
-                        <Text>契約形態：{item.employment_status}</Text>
-                        <Text>役割：{item.role}（{item.member_count}/人）</Text>
-                      </Box>
+          {data
+            .slice()
+            .reverse()
+            .map((item, index) => {
+              const titleArea = (
+                <Box py={3}>
+                  <Text size="xs">
+                    {item.start_date} ~ {item.end_date}
+                  </Text>
+                  <Text fw={700}>
+                    【{item.business_category}】{item.project_title}
+                  </Text>
+                  <Divider my="md" color="#099cff" />
+                </Box>
+              );
+              return (
+                <Timeline.Item title={titleArea} key={index}>
+                  <Grid>
+                    <Grid.Col span={6}>
+                      <Stack gap="md">
+                        <Box>
+                          <Title order={6}>概要</Title>
+                          <Text
+                            dangerouslySetInnerHTML={{
+                              __html: item.project_detail.overview.replaceAll('¥n', '<br />'),
+                            }}
+                          />
+                          <Text>契約形態：{item.employment_status}</Text>
+                          <Text>
+                            役割：{item.role}（{item.member_count}/人）
+                          </Text>
+                        </Box>
 
-                      <Box>
-                        <Title order={6}>言語</Title>
-                        <Text>{item.programming_language.join(", ")}</Text>
-                      </Box>
+                        <Box>
+                          <Title order={6}>言語</Title>
+                          <Text>{item.programming_language.join(', ')}</Text>
+                        </Box>
 
-                      <Box>
-                        <Title order={6}>FW</Title>
-                        <Text>{item.framework.join(", ")}</Text>
-                      </Box>
-                    </Stack>
-                  </Grid.Col>
+                        <Box>
+                          <Title order={6}>FW</Title>
+                          <Text>{item.framework.join(', ')}</Text>
+                        </Box>
+                      </Stack>
+                    </Grid.Col>
 
-                  <Grid.Col span={6}>
-                    <Stack>
+                    <Grid.Col span={6}>
+                      <Stack>
                         <Title order={6}>詳細</Title>
 
                         <Box>
@@ -141,7 +170,7 @@ function App() {
 
                         <Box>
                           <Text size="xs">使用したツールや技術</Text>
-                          {item.project_detail.tools_technologies_used.join(", ")}
+                          {item.project_detail.tools_technologies_used.join(', ')}
                         </Box>
 
                         <Box>
@@ -161,23 +190,21 @@ function App() {
                           </thead>
                           <tbody>
                             <tr>
-                              <td>{item.pe_requirement_definition ? "◯" : "-"}</td>
-                              <td>{item.pe_basic_design ? "◯" : "-"}</td>
-                              <td>{item.pe_detailed_design ? "◯" : "-"}</td>
-                              <td>{item.pe_implementation_unit_testing ? "◯" : "-"}</td>
-                              <td>{item.pe_testing ? "◯" : "-"}</td>
+                              <td>{item.pe_requirement_definition ? '◯' : '-'}</td>
+                              <td>{item.pe_basic_design ? '◯' : '-'}</td>
+                              <td>{item.pe_detailed_design ? '◯' : '-'}</td>
+                              <td>{item.pe_implementation_unit_testing ? '◯' : '-'}</td>
+                              <td>{item.pe_testing ? '◯' : '-'}</td>
                             </tr>
                           </tbody>
                         </table>
-
-                    </Stack>
-                  </Grid.Col>
-                </Grid>
-              </Timeline.Item>
-            )
-          })}
+                      </Stack>
+                    </Grid.Col>
+                  </Grid>
+                </Timeline.Item>
+              );
+            })}
         </Timeline>
-
       </main>
     </div>
   );

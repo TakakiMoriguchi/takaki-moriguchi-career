@@ -8,12 +8,7 @@
       "task_responsibilities": "企画・デザイン・プロジェクト管理・データ収集・環境構築・開発",
       "achievements": "リリース前まで開発したが、自分以外のメンバー脱退・コロナ・次の案件受注の為、断念した。",
       "team_structure": "自分+バックエンド１名¥nフロント１名（常時入れ替わり）",
-      "tools_technologies_used": [
-        "AWS",
-        "LucidChart",
-        "illustrator",
-        "photoshop"
-      ],
+      "tools_technologies_used": ["AWS", "LucidChart", "illustrator", "photoshop"],
       "git_repository": "github"
     },
     "employment_status": "",
@@ -21,14 +16,8 @@
     "end_date": "2021年12月頃",
     "role": "",
     "member_count": 4,
-    "programming_language": [
-      "JavaScript",
-      "PHP"
-    ],
-    "framework": [
-      "Vue2",
-      "Laravel6"
-    ],
+    "programming_language": ["JavaScript", "PHP"],
+    "framework": ["Vue2", "Laravel6"],
     "db": "MySQL",
     "server": "centos7",
     "pe_requirement_definition": true,
@@ -46,11 +35,7 @@
       "task_responsibilities": "要件定義・開発・デザイン",
       "achievements": "リリース済",
       "team_structure": "自分+バックエンド 各１人（２ヶ月目より1人で開発）",
-      "tools_technologies_used": [
-        "LucidChart",
-        "Sketch",
-        "illustrator"
-      ],
+      "tools_technologies_used": ["LucidChart", "Sketch", "illustrator"],
       "git_repository": "github"
     },
     "employment_status": "請負契約",
@@ -58,15 +43,8 @@
     "end_date": "2022年6月頃",
     "role": "PL",
     "member_count": 3,
-    "programming_language": [
-      "JavaScript",
-      "PHP"
-    ],
-    "framework": [
-      "Vue2",
-      "Laravel6",
-      "Bootstrap"
-    ],
+    "programming_language": ["JavaScript", "PHP"],
+    "framework": ["Vue2", "Laravel6", "Bootstrap"],
     "db": "PostgreSQL",
     "server": "centos5",
     "pe_requirement_definition": true,
@@ -84,10 +62,7 @@
       "task_responsibilities": "UIデザイン",
       "achievements": "",
       "team_structure": "",
-      "tools_technologies_used": [
-        "Sketch",
-        "illustrator"
-      ],
+      "tools_technologies_used": ["Sketch", "illustrator"],
       "git_repository": ""
     },
     "employment_status": "準委任契約",
@@ -95,12 +70,8 @@
     "end_date": "2022年8月頃",
     "role": "Designer",
     "member_count": 1,
-    "programming_language": [
-      "-"
-    ],
-    "framework": [
-      "-"
-    ],
+    "programming_language": ["-"],
+    "framework": ["-"],
     "db": "",
     "server": "",
     "pe_requirement_definition": false,
@@ -118,9 +89,7 @@
       "task_responsibilities": "設計・外注管理",
       "achievements": "リリース済",
       "team_structure": "自分+外注1人",
-      "tools_technologies_used": [
-        ""
-      ],
+      "tools_technologies_used": [""],
       "git_repository": ""
     },
     "employment_status": "準委任契約",
@@ -128,14 +97,8 @@
     "end_date": "2022年9月頃",
     "role": "PL",
     "member_count": 1,
-    "programming_language": [
-      "JavaScript",
-      "PHP"
-    ],
-    "framework": [
-      "Laravel9",
-      "React"
-    ],
+    "programming_language": ["JavaScript", "PHP"],
+    "framework": ["Laravel9", "React"],
     "db": "MySQL",
     "server": "AlmaLinux",
     "pe_requirement_definition": false,
@@ -153,12 +116,7 @@
       "task_responsibilities": "PL",
       "achievements": "リリース済",
       "team_structure": "自分+フロント1名、バックエンド1名、インフラ1名、DB1名、PM1名、外注2名",
-      "tools_technologies_used": [
-        "LucidChart",
-        "Sketch",
-        "AWS",
-        "M4u"
-      ],
+      "tools_technologies_used": ["LucidChart", "Sketch", "AWS", "M4u"],
       "git_repository": "gitlab"
     },
     "employment_status": "準委任契約",
@@ -166,15 +124,8 @@
     "end_date": "2024年1月末",
     "role": "PL",
     "member_count": 5,
-    "programming_language": [
-      "TypeScript",
-      "Python"
-    ],
-    "framework": [
-      "React",
-      "Next.js",
-      "Django"
-    ],
+    "programming_language": ["TypeScript", "Python"],
+    "framework": ["React", "Next.js", "Django"],
     "db": "MySQL",
     "server": "AlmaLinux/Nginx",
     "pe_requirement_definition": true,
@@ -192,11 +143,7 @@
       "task_responsibilities": "設計・デザイン・開発",
       "achievements": "１次受けの開発費不足で再契約できず、プロジェクト終了",
       "team_structure": "自分+フルスタック1名",
-      "tools_technologies_used": [
-        "LucidChart",
-        "Sketch",
-        "ExcelJS"
-      ],
+      "tools_technologies_used": ["LucidChart", "Sketch", "ExcelJS"],
       "git_repository": "github, bitbucket"
     },
     "employment_status": "準委任契約",
@@ -204,12 +151,8 @@
     "end_date": "2024年12月頃",
     "role": "PL",
     "member_count": 2,
-    "programming_language": [
-      "TypeScript"
-    ],
-    "framework": [
-      "Next.js"
-    ],
+    "programming_language": ["TypeScript"],
+    "framework": ["Next.js"],
     "db": "MySQL",
     "server": "AlmaLinux/Nginx",
     "pe_requirement_definition": true,
@@ -227,9 +170,7 @@
       "task_responsibilities": "開発",
       "achievements": "現在進行中",
       "team_structure": "自分1名",
-      "tools_technologies_used": [
-        "mermaid"
-      ],
+      "tools_technologies_used": ["mermaid"],
       "git_repository": "github"
     },
     "employment_status": "準委任契約",
@@ -237,14 +178,8 @@
     "end_date": "継続中（空いている時間で開発）",
     "role": "PG",
     "member_count": 1,
-    "programming_language": [
-      "TypeScript",
-      "Python"
-    ],
-    "framework": [
-      "React",
-      "FastAPI"
-    ],
+    "programming_language": ["TypeScript", "Python"],
+    "framework": ["React", "FastAPI"],
     "db": "MySQL",
     "server": "nginx",
     "pe_requirement_definition": true,
@@ -262,11 +197,7 @@
       "task_responsibilities": "開発",
       "achievements": "契約終了",
       "team_structure": "自分+フルスタック3名+フロント1名",
-      "tools_technologies_used": [
-        "Figma",
-        "SWR",
-        "MaterialUI"
-      ],
+      "tools_technologies_used": ["Figma", "SWR", "MaterialUI"],
       "git_repository": "github"
     },
     "employment_status": "準委任契約",
@@ -274,12 +205,8 @@
     "end_date": "2024年5月末",
     "role": "PG",
     "member_count": 5,
-    "programming_language": [
-      "TypeScript"
-    ],
-    "framework": [
-      "Next.js"
-    ],
+    "programming_language": ["TypeScript"],
+    "framework": ["Next.js"],
     "db": "MySQL",
     "server": "AWS",
     "pe_requirement_definition": true,
@@ -297,11 +224,7 @@
       "task_responsibilities": "開発",
       "achievements": "10月末で契約終了",
       "team_structure": "自分+フロント2名+バックエンド1名+PM1名+PL1名",
-      "tools_technologies_used": [
-        "Figma",
-        "SWR",
-        "MaterialUI"
-      ],
+      "tools_technologies_used": ["Figma", "SWR", "MaterialUI"],
       "git_repository": "github"
     },
     "employment_status": "準委任契約",
@@ -309,12 +232,8 @@
     "end_date": "2024年10月",
     "role": "PG",
     "member_count": 6,
-    "programming_language": [
-      "TypeScript"
-    ],
-    "framework": [
-      "React"
-    ],
+    "programming_language": ["TypeScript"],
+    "framework": ["React"],
     "db": "Firebase",
     "server": "",
     "pe_requirement_definition": false,
@@ -332,10 +251,7 @@
       "task_responsibilities": "開発",
       "achievements": "10月末で契約終了",
       "team_structure": "自分+フロント4名+PM1名+PL1名",
-      "tools_technologies_used": [
-        "Figma",
-        "MaterialUI"
-      ],
+      "tools_technologies_used": ["Figma", "MaterialUI"],
       "git_repository": "github"
     },
     "employment_status": "SES",
@@ -343,13 +259,8 @@
     "end_date": "2024年10月",
     "role": "PG",
     "member_count": 6,
-    "programming_language": [
-      "TypeScript"
-    ],
-    "framework": [
-      "React",
-      "Next.js"
-    ],
+    "programming_language": ["TypeScript"],
+    "framework": ["React", "Next.js"],
     "db": "",
     "server": "",
     "pe_investigation_analysis": false,
@@ -369,10 +280,7 @@
       "task_responsibilities": "開発",
       "achievements": "開発中",
       "team_structure": "全体で30-40名（フロントは8名）",
-      "tools_technologies_used": [
-        "Figma",
-        "Figjam"
-      ],
+      "tools_technologies_used": ["Figma", "Figjam"],
       "git_repository": "github"
     },
     "employment_status": "SES",
@@ -380,14 +288,8 @@
     "end_date": "-",
     "role": "PG",
     "member_count": 8,
-    "programming_language": [
-      "TypeScript",
-      "Go"
-    ],
-    "framework": [
-      "React19",
-      "Next.js15"
-    ],
+    "programming_language": ["TypeScript", "Go"],
+    "framework": ["React19", "Next.js15"],
     "db": "",
     "server": "",
     "pe_investigation_analysis": true,
@@ -407,9 +309,7 @@
       "task_responsibilities": "開発",
       "achievements": "開発中",
       "team_structure": "自分1名",
-      "tools_technologies_used": [
-        "Figjam"
-      ],
+      "tools_technologies_used": ["Figjam"],
       "git_repository": "github"
     },
     "employment_status": "準委任契約",
@@ -417,14 +317,8 @@
     "end_date": "-",
     "role": "PG/PM",
     "member_count": 1,
-    "programming_language": [
-      "TypeScript",
-      "Go"
-    ],
-    "framework": [
-      "React19",
-      "Next.js15"
-    ],
+    "programming_language": ["TypeScript", "Go"],
+    "framework": ["React19", "Next.js15"],
     "db": "",
     "server": "",
     "pe_investigation_analysis": true,

@@ -1,5 +1,5 @@
-type employmentStatus = ["請負契約", "準委任契約"]
-type roleType = ["PM", "PL", "PG", "Designer"]
+type employmentStatus = ['請負契約', '準委任契約'];
+type roleType = ['PM', 'PL', 'PG', 'Designer'];
 
 type profectDetail = {
   overview: string; // 概要
@@ -8,7 +8,7 @@ type profectDetail = {
   team_structure: string; // チーム構成
   tools_technologies_used: string[]; // 使用したツールや技術
   git_repository: string; // gitリポジトリ
-}
+};
 
 export type DataType = {
   id: number; // key用
@@ -16,7 +16,7 @@ export type DataType = {
   project_title: string; // プロジェクト名
   project_detail: profectDetail; // プロジェクト詳細（後で拡張）
   profect_url: string; // プロジェクトURL
-  employment_status: employmentStatus | ""; // 雇用形態
+  employment_status: employmentStatus | ''; // 雇用形態
   start_date: string; // 契約開始日
   end_date: string; // 契約終了日
   role: roleType; // 役割
@@ -32,4 +32,4 @@ export type DataType = {
   pe_implementation_unit_testing: boolean; // 実装・単体
   pe_testing: boolean; // テスト
   pe_maintenance_operation: boolean; // 保守・運用
-}
+};
