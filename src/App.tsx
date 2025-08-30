@@ -130,6 +130,7 @@ function App() {
                             dangerouslySetInnerHTML={{
                               __html: item.project_detail.overview.replaceAll('¥n', '<br />'),
                             }}
+                            mb="sm"
                           />
                           <Text>契約形態：{item.employment_status}</Text>
                           <Text>
