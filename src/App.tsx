@@ -70,6 +70,49 @@ function App() {
         <Grid>
           <Grid.Col span={12}>
             <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
+              <Title order={5}>📊&nbsp;Skill Range</Title>
+              <Box mt="md" style={{ position: 'relative', paddingBottom: '8px' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    marginBottom: '12px',
+                  }}
+                >
+                  <Text size="sm" fw={500}>
+                    Business / Plannning
+                  </Text>
+                  <Text size="sm" fw={500}>
+                    Design
+                  </Text>
+                  <Text size="sm" fw={500}>
+                    System Design
+                  </Text>
+                  <Text size="sm" fw={500}>
+                    FrontEnd
+                  </Text>
+                  <Text size="sm" fw={500}>
+                    BackEnd
+                  </Text>
+                  <Text size="sm" fw={500}>
+                    Infrastructure / DevOps
+                  </Text>
+                </div>
+                <div
+                  style={{
+                    position: 'relative',
+                    height: '8px',
+                    background:
+                      'linear-gradient(to right, #228be6 0%, #228be6 70%, #e9ecef 90%, #e9ecef 100%)',
+                    borderRadius: '4px',
+                  }}
+                />
+              </Box>
+            </Paper>
+          </Grid.Col>
+
+          <Grid.Col span={12}>
+            <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
               <Title order={5}>👍&nbsp;Interests</Title>
               <Group mt="md" gap="sm">
                 <Badge radius="xl" color="gray" variant="light" style={{ color: 'black' }}>
