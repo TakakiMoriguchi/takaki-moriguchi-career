@@ -399,6 +399,40 @@ export const data = [
   },
   {
     id: 12,
+    business_category: '交通',
+    project_title: '鉄道会社の抽選ページ, CMS',
+    project_detail: {
+      overview: `
+        鉄道会社のWEBページ作成案件。¥n
+        炎上案件に参画し、コードのリファクタなどを主に行い、品質向上に貢献した。¥n
+        またチェックインやふりかえりミーティングを積極的に行い、先ずは心理的安全性の確保を重視した。¥n
+        リバースエンジニアリングで既存コードの解析を行い、要件定義や設計の更新に活かした。¥n
+      `,
+      task_responsibilities: '開発',
+      achievements: '開発終了',
+      team_structure: '全体で20-30名（フロントは5-7名程度）',
+      tools_technologies_used: ['Figma', 'Figjam'],
+      git_repository: 'github',
+    },
+    employment_status: 'SES',
+    start_date: '2025年2月',
+    end_date: '2025年6月',
+    role: 'PG',
+    member_count: 5,
+    programming_language: ['TypeScript', 'Go'],
+    framework: ['React19', 'Next.js15'],
+    db: 'mysql',
+    server: '',
+    pe_investigation_analysis: false,
+    pe_requirement_definition: false,
+    pe_basic_design: false,
+    pe_detailed_design: false,
+    pe_implementation_unit_testing: true,
+    pe_testing: true,
+    pe_maintenance_operation: false,
+  },
+  {
+    id: 13,
     business_category: 'サービス',
     project_title: 'ふりかえりツール開発',
     project_detail: {
@@ -425,40 +459,6 @@ export const data = [
     pe_requirement_definition: true,
     pe_basic_design: true,
     pe_detailed_design: true,
-    pe_implementation_unit_testing: true,
-    pe_testing: true,
-    pe_maintenance_operation: false,
-  },
-  {
-    id: 13,
-    business_category: '交通',
-    project_title: '鉄道会社の抽選ページ, CMS',
-    project_detail: {
-      overview: `
-        鉄道会社のWEBページ作成案件。¥n
-        炎上案件に参画し、コードのリファクタなどを主に行い、品質向上に貢献した。¥n
-        またチェックインやふりかえりミーティングを積極的に行い、先ずは心理的安全性の確保を重視した。¥n
-        リバースエンジニアリングで既存コードの解析を行い、要件定義や設計の更新に活かした。¥n
-      `,
-      task_responsibilities: '開発',
-      achievements: '開発終了',
-      team_structure: '全体で20-30名（フロントは5-7名程度）',
-      tools_technologies_used: ['Figma', 'Figjam'],
-      git_repository: 'github',
-    },
-    employment_status: 'SES',
-    start_date: '2024年2月',
-    end_date: '2025年6月',
-    role: 'PG',
-    member_count: 5,
-    programming_language: ['TypeScript', 'Go'],
-    framework: ['React19', 'Next.js15'],
-    db: 'mysql',
-    server: '',
-    pe_investigation_analysis: false,
-    pe_requirement_definition: false,
-    pe_basic_design: false,
-    pe_detailed_design: false,
     pe_implementation_unit_testing: true,
     pe_testing: true,
     pe_maintenance_operation: false,
