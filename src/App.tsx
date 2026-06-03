@@ -49,7 +49,11 @@ function App() {
 
         <section className="Career">
           <div className="body">
-            <h3>💻&nbsp;&nbsp;IT Engineer: 8th year</h3>
+            <h3>
+              💻&nbsp;&nbsp;IT Engineer<span className="colon-space">: </span>
+              <br className="sp-br" />
+              8th year
+            </h3>
             <div className="skill">
               <p>TypeScript(React), Python, Go</p>
               <p>SQL, Docker</p>
@@ -57,9 +61,13 @@ function App() {
           </div>
 
           <div className="body">
-            <h3>🎨&nbsp;&nbsp;Designer: 10y over</h3>
+            <h3>
+              🎨&nbsp;&nbsp;Designer<span className="colon-space">: </span>
+              <br className="sp-br" />
+              10y over
+            </h3>
             <div className="skill">
-              <p>photoshop, illustrator</p>
+              <p>photoshop, illustrator, affinity</p>
               <p>sketch, figma</p>
             </div>
           </div>
@@ -71,14 +79,8 @@ function App() {
           <Grid.Col span={12}>
             <Paper radius="md" shadow="xs" p="xl" h="100%" withBorder>
               <Title order={5}>📊&nbsp;Skill Range</Title>
-              <Box mt="md" style={{ position: 'relative', paddingBottom: '8px' }}>
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    marginBottom: '12px',
-                  }}
-                >
+              <Box mt="md" className="skill-range-wrapper">
+                <div className="skill-labels">
                   <Text size="sm" fw={500}>
                     Business / Plannning
                   </Text>
@@ -98,15 +100,7 @@ function App() {
                     Infrastructure / DevOps
                   </Text>
                 </div>
-                <div
-                  style={{
-                    position: 'relative',
-                    height: '8px',
-                    background:
-                      'linear-gradient(to right, #228be6 0%, #228be6 70%, #e9ecef 90%, #e9ecef 100%)',
-                    borderRadius: '4px',
-                  }}
-                />
+                <div className="skill-bar" />
               </Box>
             </Paper>
           </Grid.Col>
@@ -165,7 +159,7 @@ function App() {
               return (
                 <Timeline.Item title={titleArea} key={index}>
                   <Grid>
-                    <Grid.Col span={6}>
+                    <Grid.Col span={{ base: 12, md: 6 }}>
                       <Stack gap="md">
                         <Box>
                           <Title order={6}>概要</Title>
@@ -193,7 +187,7 @@ function App() {
                       </Stack>
                     </Grid.Col>
 
-                    <Grid.Col span={6}>
+                    <Grid.Col span={{ base: 12, md: 6 }}>
                       <Stack>
                         <Title order={6}>詳細</Title>
 
