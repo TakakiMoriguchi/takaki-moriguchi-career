@@ -1,4 +1,6 @@
-export const data = [
+import { DataType } from './data_type';
+
+export const data: DataType[] = [
   {
     id: 1,
     business_category: '観光',
@@ -21,6 +23,7 @@ export const data = [
       tools_technologies_used: ['AWS', 'LucidChart', 'illustrator', 'photoshop'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: '',
     start_date: '2019年1月頃',
     end_date: '2021年12月頃',
@@ -55,6 +58,7 @@ export const data = [
       tools_technologies_used: ['LucidChart', 'Sketch', 'illustrator'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: '請負契約',
     start_date: '2021年9月頃',
     end_date: '2022年6月頃',
@@ -84,6 +88,7 @@ export const data = [
       tools_technologies_used: ['Sketch', 'illustrator'],
       git_repository: '',
     },
+    project_url: '',
     employment_status: '準委任契約',
     start_date: '2022年7月頃',
     end_date: '2022年8月頃',
@@ -122,6 +127,7 @@ export const data = [
       tools_technologies_used: [''],
       git_repository: '',
     },
+    project_url: '',
     employment_status: '準委任契約',
     start_date: '2022年9月頃',
     end_date: '2022年9月頃',
@@ -185,6 +191,7 @@ export const data = [
       tools_technologies_used: ['LucidChart', 'Sketch', 'Zadara', 'M4u'],
       git_repository: 'gitlab',
     },
+    project_url: '',
     employment_status: '準委任契約',
     start_date: '2022年8月頃',
     end_date: '2024年1月末',
@@ -227,6 +234,7 @@ export const data = [
       tools_technologies_used: ['LucidChart', 'Sketch', 'ExcelJS'],
       git_repository: 'github, bitbucket',
     },
+    project_url: '',
     employment_status: '準委任契約',
     start_date: '2023年5月頃',
     end_date: '2024年12月頃',
@@ -279,6 +287,7 @@ export const data = [
       tools_technologies_used: ['mermaid'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: '準委任契約',
     start_date: '2023年1月末頃',
     end_date: '2025年2月頃',
@@ -319,6 +328,7 @@ export const data = [
       tools_technologies_used: ['Figma', 'SWR', 'MaterialUI'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: 'SES',
     start_date: '2024年2月',
     end_date: '2024年5月末',
@@ -360,6 +370,7 @@ export const data = [
       tools_technologies_used: ['Figma', 'SWR', 'MaterialUI'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: 'SES',
     start_date: '2024年6月',
     end_date: '2024年10月',
@@ -400,6 +411,7 @@ export const data = [
       tools_technologies_used: ['Figma', 'MaterialUI'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: 'SES',
     start_date: '2024年9月',
     end_date: '2024年10月',
@@ -449,6 +461,7 @@ export const data = [
       tools_technologies_used: ['Figma', 'Figjam'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: 'SES',
     start_date: '2024年11月',
     end_date: '2026年2月',
@@ -491,6 +504,7 @@ export const data = [
       tools_technologies_used: ['Figma', 'Figjam'],
       git_repository: 'github',
     },
+    project_url: '',
     employment_status: 'SES',
     start_date: '2026年2月',
     end_date: '2026年6月',
@@ -515,7 +529,20 @@ export const data = [
     project_detail: {
       overview: `
         ふりかえりミーティングのためのWEBアプリ開発。
-        2026年6月リリース予定
+        チェックイン・ふりかえり・ドラッカー風エクササイズなど、スクラムマスターがふりかえりミーティングを円滑に進めるための機能を提供する。
+        【担当領域】
+        全工程
+        【課題と対策】
+        ホスト側の管理画面はシンプルで、操作のしやすいUIを提供している。
+        一方ゲストも参加するゲーム画面では、わくわくするようなUI/UXを提供するため、動きやデザイン、音にこだわっている。
+        サーバー管理コスト削減のためサーバーレスなVercel/Supabaseを採用。
+        SupabaseのリアルタイムサブスクリプションがWebSocketの実装工数を省けると判断したため選定した。
+        ふりかえりが成功するかどうかは、チームの関係性ができているかと、とにかくファシリテーターに依存する部分が大きいということで、ファシリテーターがふりかえりを成功させるための機能を提供することに注力している。
+        具体的にはチームの作成、メンバーの招待、ルーレットなどのミニツールの提供、レポートの出力、進行ボードの提供、出てきた付箋に対してAIがファシリテーションをサポートするなどを提供している。
+        【得た知見】
+        AI駆動開発を実践しており、同じ機能であってもホストとゲストでUI/UXを変える必要があるなど、かなり複雑なことをしているが、細かくプロンプトを調整してコントロールする重要性を学んだ。
+        また実際に人間が書くには複雑すぎるようなコードも積極的に設計したり、何百件単位の大量のデータを事前に用意することによって、ユーザーが飽きないような選択肢も用意している。
+        storybookによるカタログ、E2Eテストやユニットテストも積極的に導入しており、安定した品質を保ちながら、継続的に機能追加を行うことができている。
       `,
       task_responsibilities: '全工程',
       achievements: '継続開発中',
@@ -523,12 +550,13 @@ export const data = [
       tools_technologies_used: ['Figjam', 'stripe'],
       git_repository: 'github',
     },
-    employment_status: '準委任契約',
+    project_url: 'https://kizuna-rs.work/',
+    employment_status: 'スポンサー契約',
     start_date: '2025年2月',
     end_date: '-',
     role: 'PG/PM',
     member_count: 1,
-    programming_language: ['TypeScript', 'Go'],
+    programming_language: ['TypeScript'],
     framework: ['React19', 'Next.js15'],
     db: 'supabase',
     server: '',

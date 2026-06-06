@@ -1,5 +1,5 @@
-type employmentStatus = ['請負契約', '準委任契約'];
-type roleType = ['PM', 'PL', 'PG', 'Designer'];
+type employmentStatus = '請負契約' | '準委任契約' | 'SES' | 'スポンサー契約';
+type roleType = 'PM' | 'PL' | 'PG' | 'Designer' | 'PG/PM';
 
 type profectDetail = {
   overview: string; // 概要
@@ -15,11 +15,11 @@ export type DataType = {
   business_category: string; // 業種
   project_title: string; // プロジェクト名
   project_detail: profectDetail; // プロジェクト詳細（後で拡張）
-  profect_url: string; // プロジェクトURL
+  project_url: string; // プロジェクトURL
   employment_status: employmentStatus | ''; // 雇用形態
   start_date: string; // 契約開始日
   end_date: string; // 契約終了日
-  role: roleType; // 役割
+  role: roleType | ''; // 役割
   member_count: number; // メンバー数
   programming_language: string[]; // 使用言語
   framework: string[]; // 使用フレームワーク

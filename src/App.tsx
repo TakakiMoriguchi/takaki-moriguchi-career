@@ -1,6 +1,7 @@
 import './App.scss';
 import avator from './assets/images/my_avator.png';
 import { data } from './data';
+import { profile } from './config';
 import {
   Timeline,
   Text,
@@ -14,12 +15,13 @@ import {
   Space,
   Paper,
   Button,
+  Anchor,
 } from '@mantine/core';
 import download from './assets/images/download.svg';
 import { downloadResume } from './downloadResume';
 
 function App() {
-  const age = new Date().getFullYear() - 1989;
+  const age = new Date().getFullYear() - profile.birthYear;
 
   return (
     <div className="App">
@@ -40,8 +42,10 @@ function App() {
         <img src={avator} alt="Avator" className="my-avator" />
 
         <section className="Head">
-          <h1>ENTJ ♂({age})</h1>
-          <p>🇯🇵&nbsp;🇺🇸&nbsp;🇨🇳</p>
+          <h1>
+            {profile.mbti} ♂({age})
+          </h1>
+          <p>{profile.nationality}</p>
           <p>
             Generalist | <s>Specialist</s>
           </p>
@@ -55,8 +59,8 @@ function App() {
               8th year
             </h3>
             <div className="skill">
-              <p>TypeScript(React), Python, Go</p>
-              <p>SQL, Docker</p>
+              <p>{profile.skills.engineer.languages}</p>
+              <p>{profile.skills.engineer.tools}</p>
             </div>
           </div>
 
@@ -67,8 +71,8 @@ function App() {
               10y over
             </h3>
             <div className="skill">
-              <p>photoshop, illustrator, affinity</p>
-              <p>sketch, figma</p>
+              <p>{profile.skills.designer.tools}</p>
+              <p>{profile.skills.designer.design}</p>
             </div>
           </div>
         </section>
@@ -257,6 +261,20 @@ function App() {
                           <Title order={6}>FW</Title>
                           <Text>{item.framework.join(', ')}</Text>
                         </Box>
+
+                        {item.project_url && (
+                          <Box>
+                            <Title order={6}>URL</Title>
+                            <Anchor
+                              href={item.project_url}
+                              target="_blank"
+                              rel="noreferrer"
+                              size="sm"
+                            >
+                              {item.project_url}
+                            </Anchor>
+                          </Box>
+                        )}
                       </Stack>
                     </Grid.Col>
 
